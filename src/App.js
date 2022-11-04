@@ -1,65 +1,39 @@
-import { Component } from 'react'
-import Productos from './components/Productos'
-import Layout from './components/Layout'
-import Navbar from './components/Navbar'
-import Title from './components/Title'
+import { Component } from "react";
+import Products from "./components/Products";
+import Layout from "./components/Layout";
+import Hero from "./components/Hero";
 
 class App extends Component {
   state = {
-    productos: [
-      { name: 'Tomate', price: 1500, img: './productos/tomate.jpeg' },
-      { name: 'Arbejas', price: 2500, img: './productos/arbejas.jpeg' },
-      { name: 'Lechuga', price: 500, img: './productos/lechuga.jpeg' },
+    products: [
+      {
+        name: "Daytona",
+        price: 150000,
+        priceDots: "150,000.00",
+        img: "./img/cosmograph-daytona-1.png",
+        description: "A chronograph for the race circuit",
+      },
+      {
+        name: "Submariner",
+        price: 100000,
+        priceDots: "100,000.00",
+        img: "./img/submariner.png",
+        description: "A true, divers watch by simple design",
+      },
     ],
-    carro: [],
-    esCarroVisible: false,
-  }
-
-  agregarAlCarro = (producto) => {
-    const { carro } = this.state
-    if (carro.find(x => x.name === producto.name)) {
-      const newCarro = carro.map(x => x.name === producto.name
-        ? ({
-          ...x,
-          cantidad: x.cantidad + 1
-        })
-        : x)
-      return this.setState({ carro: newCarro })
-    }
-    return this.setState({
-      carro: this.state.carro.concat({
-        ...producto,
-        cantidad: 1,
-      })
-    })
-  }
-
-  mostrarCarro = () => {
-    if(!this.state.carro.length) {
-      return
-    }
-    this.setState({ esCarroVisible: !this.state.esCarroVisible })
-  }
+  };
 
   render() {
-    const { esCarroVisible } = this.state
-    
+    document.title = "Rolex B&W Limited Edition";
+
     return (
-      <div>
-        <Navbar
-          carro={this.state.carro}
-          esCarroVisible={esCarroVisible}
-          mostrarCarro={this.mostrarCarro}
-        />
+      <>
+        <Hero />
         <Layout>
-          <Title />
-          <Productos
-            agregarAlCarro={this.agregarAlCarro}
-            productos={this.state.productos}
-          />
+          <Products products={this.state.products} />
         </Layout>
-      </div>
-    )
+      </>
+    );
   }
 }
 
