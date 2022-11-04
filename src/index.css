@@ -35,7 +35,8 @@ video {
   flex-direction: row;
   justify-content: space-between;
   min-height: 100vh;
-  padding: 100px;
+  padding: 60px 100px 100px 100px;
+  gap: 50px;
 }
 @media screen and (max-width: 800px) {
   *{
@@ -44,6 +45,5 @@ video {
   .products {
     flex-direction: column;
     font-size: 0.8em !important;
-
   }
 }

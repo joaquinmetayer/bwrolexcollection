@@ -2,7 +2,7 @@ import { Component } from "react";
 
 const styles = {
   product: {
-    width: "100%",
+    maxWidth: "500px",
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
