@@ -1,6 +1,6 @@
-# Verdu Shop
+# Black and Withe Rolex Limited Edition
 
-<img src="./public/readme.png">
+<img src="./public/img/readme.png">
 
 # Getting Started with Create React App
 
