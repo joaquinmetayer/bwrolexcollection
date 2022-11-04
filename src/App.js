@@ -2,6 +2,7 @@ import { Component } from "react";
 import Products from "./components/Products";
 import Layout from "./components/Layout";
 import Hero from "./components/Hero";
+import Footer from "./components/Footer";
 
 class App extends Component {
   state = {
@@ -32,6 +33,7 @@ class App extends Component {
         <Layout>
           <Products products={this.state.products} />
         </Layout>
+        <Footer />
       </>
     );
   }

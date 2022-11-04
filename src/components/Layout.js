@@ -9,7 +9,7 @@ const styles = {
     color: '#000'
   },
   container: {
-    width: '1100px',
+    maxWidth: '1500px',
   }
 }
 class Layout extends Component {

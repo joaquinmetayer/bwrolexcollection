@@ -2,13 +2,13 @@ import { Component } from "react";
 
 const styles = {
   product: {
-    width: "400px",
-    padding: "20px",
+    width: "100%",
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
     gap: '25px',
+    textAlign: 'center',
   },
   img: {
     width: "100%",
@@ -24,7 +24,6 @@ const styles = {
   productDescription:{
     fontSize: '23px',
   },
-  
   hr:{
     border: '1px solid #000',
     backgroundColor: '#000',
