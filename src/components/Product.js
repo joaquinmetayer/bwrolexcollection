@@ -2,7 +2,7 @@ import { Component } from "react";
 
 const styles = {
   product: {
-    maxWidth: "500px",
+    maxWidth: "350px",
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
@@ -14,15 +14,8 @@ const styles = {
     width: "100%",
   },
   productTitle: {
-    fontSize: '30px',
     paddingTop: '12px',
     textTransform: 'uppercase',
-  },
-  productPrice:{
-    fontSize: '30px',
-  },
-  productDescription:{
-    fontSize: '23px',
   },
   hr:{
     border: '1px solid #000',
@@ -39,8 +32,8 @@ class Product extends Component {
         <img style={styles.img} alt={product.name} src={product.img} />
         <hr style={styles.hr}/>
         <h2 style={styles.productTitle}>{product.name}</h2>
-        <p style={styles.productDescription}>{product.description}</p>
-        <p style={styles.productPrice}>$ {product.priceDots}</p>
+        <p>{product.description}</p>
+        <p>$ {product.priceDots}</p>
       </div>
     );
   }

@@ -15,7 +15,7 @@ const styles = {
     bottom: "0",
   },
   footerTitle: {
-    fontSize: "50px",
+    fontSize: "30px",
     textTransform: "uppercase",
     fontFamily: "'Montserrat', sans-serif",
     padding: "10px",

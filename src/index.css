@@ -40,10 +40,10 @@ video {
 }
 @media screen and (max-width: 800px) {
   *{
-    font-size: 1.1em !important;
+    /*font-size: 1.1em !important;*/
   }
   .products {
     flex-direction: column;
-    font-size: 0.8em !important;
+    /*font-size: 0.8em !important;*/
   }
 }

@@ -12,7 +12,6 @@ const styles = {
   rolex: {
     height: "100px",
     padding: "20px",
-    fontSize: "25px",
     textAlign: "center",
     display: "flex",
     flexDirection: "column",
@@ -28,13 +27,13 @@ const styles = {
     height: "70vh",
   },
   heroTitle: {
-    fontSize: "50px",
+    fontSize: "30px",
     textTransform: "uppercase",
     fontFamily: "'Montserrat', sans-serif",
     padding: "10px",
   },
   heroDescription: {
-    fontSize: "32px",
+    fontSize: "20px",
     paddingTop: "20px",
     color: "#ffffff99",
     fontStyle: "italic",
